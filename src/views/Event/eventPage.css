@@ -1,0 +1,165 @@
+.event-container{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #effe;
+}
+.event{
+    width: 75%;
+    display: block;
+    justify-content: space-between;
+}
+.Bday-img{
+    float: right;
+}
+.Bday-img img{
+    width: 500px;
+    height: 500px;
+}
+.birthday-container{
+    float: left;
+}
+.birthday-container h2{
+    font-size: 1.6rem;
+    font-weight: 800;
+    color: #240D57;
+    letter-spacing: 0.05em;
+
+    margin-block-start: 0.3em;
+    margin-block-end: 0.3em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+.birthday-container > span{
+    color: #2c1a58;
+    font-weight: 700;
+}
+.event-row{
+    margin-top: 1.5rem;
+    display: flex;
+    align-items: center;
+}
+.event-row .icons{
+    font-size: 1.8rem;
+    color: #502da9;
+}
+.event-row .event-text{
+    margin-left: 0.5rem;
+}
+.event-row .event-text span:nth-child(1){
+    color: #502da9;
+    font-weight: 700;
+}
+@media (max-width:960px){
+    .event-container{
+        display: flex;
+        justify-content: center;
+    }
+    .event{
+        
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        padding-top: 5rem;
+        padding-bottom: 10rem;
+    }
+    .Bday-img {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 2rem;
+
+    }
+
+    .Bday-img img {
+        width: calc(15vw + 300px);
+        height: calc(15vw + 300px);
+    }
+    .birthday-container {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 2rem;
+        flex-direction: column;
+    }
+
+    .birthday-container h2 {
+        font-size: 1.5rem;
+        font-weight: 700;
+        letter-spacing: 0.03em;
+    }
+
+    .birthday-container>span {
+        font-weight: 700;
+    }
+
+    .event-row {
+        margin-top: 1.5rem;
+    }
+
+    .event-row .icons {
+        font-size: 1.8rem;
+    }
+
+    .event-row .event-text {
+        margin-left: 0.5rem;
+    }
+
+    .event-row .event-text span:nth-child(1) {
+        font-weight: 700;
+    }
+}
+@media (max-width:400px) {
+    .event-container {
+        display: flex;
+        justify-content: unset;
+        padding: 0 0 10vh 0;
+    }
+
+    .event {
+        padding-top: 0;
+        width: 100%;
+    }
+
+    .Bday-img {
+        width: 100%;
+        height: auto;
+    }
+
+    .Bday-img img {
+        width: 100%;
+        height: auto;
+    }
+
+
+    .birthday-container{
+        margin-left: 1rem;
+        margin-right: 0.3rem;
+    }
+
+    .birthday-container h2 {
+        font-size: 1.3rem;
+        font-weight: 700;
+        letter-spacing: unset;
+    }
+
+    .birthday-container > span {
+        font-weight: 600;
+    }
+
+    .event-row {
+        margin-top: 1.5rem;
+    }
+
+    .event-row .icons {
+        font-size: 1.7rem;
+    }
+
+    .event-row .event-text {
+        margin-left: 0.5rem;
+    }
+
+    .event-row .event-text span:nth-child(1) {
+        font-weight: 600;
+    }
+}
